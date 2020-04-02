@@ -1,0 +1,19 @@
+<div class="toolbar">
+
+<h3 class="namespace-title">Chat</h3>
+<span class="user-email">{{ user?.username }}</span>
+
+<h4 class="category-header">
+  Channels
+  <span class="create-channel-button"
+        (click)="onCreateChannelButtonClick()">+</span>
+</h4>
+
+<ul class="channels">
+  <li *ngFor="let channel of channels"
+      class="channel">
+    {{ channel.name }}
+  </li>
+</ul>
+
+</div>
